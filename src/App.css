@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -24,9 +24,25 @@
   color: white;
 }
 
+.center-form {
+  background-color: #6acc6a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; /* Ensures form takes up viewport height */
+}
+
 .App-link {
   color: #61dafb;
 }
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  gap: 10px; /* Add spacing between cards (optional) */
+}
+
 
 @keyframes App-logo-spin {
   from {
